@@ -140,7 +140,6 @@
 .service-background_one{
     background: linear-gradient(to right, #4598C7 0%, transparent 100%), url(img/service-one.png);
     background-position: right;
-
 }
 .service-background_two{
     background-image:  linear-gradient(to right, #4598C7 0%, transparent 100%), url(img/service-two.png);
