@@ -5,6 +5,9 @@
     --text-color: #fafafa;
 }
 
+main{
+    background-color: #E5E5E5;
+}
 .content{
     max-width: 1180px;
     margin: auto;
@@ -43,53 +46,13 @@
 .nav-item:active{
     color: #e5e5e5;
 }
-#background-foto-one{ 
-    background-image: url(img/hero.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 413px;
-}
-.slogan{
-    width: calc(100%/2);
-}
-.slogan-h{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 105%;
-    color: #262626;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-#slogan_name-clinic{
-    color: #0284c7;
-}
-.slogan-p{
-    font-weight: 400;
-    font-size: 16px; 
-    line-height: 112%; 
-    color: #0C4A6E; 
-}
-.blue-button{
-    width: 242px;
-    height: 52px;
-    background-color: #0EA5E9;
-    border: 1px solid #0EA5E9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: 40px 0;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    color: var(--text-color);
-}
-.blue-button:hover{
-    cursor: pointer;
-    background-color: #0369a1;
-    border: 1px solid #0EA5E9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
+.about-doctors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .title{
     padding-top: 70px;
     padding-bottom: 55px;
@@ -99,76 +62,84 @@
     line-height: 54px;
     color: #0369A1;
 }
-.title-caries{
-    text-align: left;
-    padding-top: 80px;
-    padding-bottom: 35px;
+.about-doctors-p{
+    text-align: center;
+    width: 83%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #737373;
 }
-.row-caries{
+.search{
+    width: 83%;
+    height: 63px;
+    background: #E0F2FE;
+    border: 1px solid #BAE6FD;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 83px;
+    margin-bottom: 109px;
+}
+.search-icon{
+    padding-left: 34px;
+    padding-right: 12px;
+    width: 18px;
+    height: 20px;
+}
+.search-p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 38px;
+    color: #A3A3A3;
+}
+
+.row-doctors{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     margin: 0px calc(0px - var(--offset) / 2);
 }
-.caries-text{
-    width: calc(100% / 12*7 - var(--offset));
+.item-doctors{
+    width: calc(100% / 3 - var(--offset));
     margin: calc(var(--offset) / 2);
-}
-.caries-foto{
-    width: calc(100% / 12*5 - var(--offset));
-    margin: calc(var(--offset) / 2);
-    height: 640px;
-}
-.caries-treatment-p{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: justify;
-    color: #0B4269;
-    padding-bottom: 48px;
-}
-.patient-foto{
-    width: 100%;
-    height: 640px;
-    box-shadow: 2px 4px 4px rgba(115, 115, 115, 0.25);
-    border-radius: 20px;
-}
-
-.prices-block{
-    width: 90%;
-    height: 78px;
-    border-radius: 30px;
-    margin: 6px auto;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.prices-block__pale{
-    background: #F0F9FF;
+.doctor-foto{
+    border-radius: 20px;
 }
-.prices-block__intense{
-    background: #E0F2FE;
+.doctor-name{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.prices-p{
+.doctor-profession{
+    font-size: 16px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    padding-left: 56px;
-    color: #075985;
 }
-.prices-blue{
-    color: #00aeff;
+.knopka{
+    border: 1px solid #0284C7;
+    border-radius: 10px;
+    width: 64%;
+    height: 50px;
+    color: #0284C7;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fafafa;
+    margin-top: 20px;
+    margin-bottom: 120px;
 }
-.prices-green{
-    color: #00ff04;
+.knopka:hover{
+    cursor: pointer;
+    background-color: #e0f2fe;
+    border: 1px solid #0369a1;
 }
-
-
-
-#services{
-    background-color: #0284C7;
-}
-
-
 
 #footer-blok{
     background-color: #F0F9FF;
