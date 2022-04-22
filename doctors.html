@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title></title>
+        <title>Dentо Plus. Наши врачи</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="doctors.css" />
@@ -35,10 +35,23 @@
                     <h2 class="title">СПЕЦИАЛИСТЫ НАШЕЙ КЛИНИКИ</h2>
                     <p class="about-doctors-p">Наши врачи ​имеют высокую квалификацию, значительный опыт работы, посещают различные семинары и конференции, повышая свой профессиональный уровень. 
                         Результаты лечения в нашей стоматологии подтверждают точность определения диагноза и выбранного метода лечения. </p>
-                    <div class="search"> <!--ВОЗМОЖНО ТУТ ИНПУТ-->
+                       
+                    <form action="" method="get">
+                        <div class="form-search">
+                            <button type="submit" class="button-search">
+                                <img src="img/search.png" class="search-icon" />
+                                <p>  |  </p>
+                            </button>
+                            <input name="s" placeholder="ФИО врача" type="search" class="search">
+                        </div>
+                       
+                    </form>
+
+                    <!--<div class="search"> 
                         <img src="img/search.png" class="search-icon" />
                         <p class="search-p">  |  ФИО врача</p>
-                    </div>
+                    </div>-->
+
                 </div>
             </section>
 
@@ -90,17 +103,17 @@
         <footer id="footer-blok">
             <div class="content">
                 <div class="footer-item">
-                    <div>
-                        <p class="footer-p">2002 «Dentо Plus» - семейная стоматологическая</br>клиника в Санкт-Петербурге.</p>
+                    <div class="center-block">
+                        <p class="footer-p footer-p__center">2002 «Dentо Plus» - семейная стоматологическая</br>клиника в Санкт-Петербурге.</p>
                     </div>
-                    <div class="icon-text">
+                    <div class="icon-text center-block">
                         <p class="footer-p">Мы в соц сетях</p>
                         <img alt="" src="img/facebook-icon.png" id="facebook-icon" />
                     </div>
                 </div>
                 <div class="footer-item">
-                    <div>
-                        <div class="icon-text">
+                    <div class="center-block">
+                        <div class="icon-text icon-text__medium">
                             <img alt="" src="img/location-icon.png" id="location-icon"/>
                             <p class="footer-p">НАШИ АДРЕСА:</p>
                         </div>
@@ -108,8 +121,8 @@
                         <p class="footer-p">Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1 </p>
                         <p class="footer-p">Санкт-Петербург, 324372, ул.Галюшина, 28</p>
                     </div>
-                    <div>
-                        <div class="icon-text">
+                    <div class="center-block">
+                        <div class="icon-text icon-text__medium">
                             <img alt="" src="img/phone-icon.png" id="phone-icon"/>
                             <p class="footer-p">НАШИ ТЕЛЕФОНЫ:</p>
                         </div>
@@ -117,16 +130,18 @@
                         <p class="footer-p">+7 (823) 555-357-32</p>
                         <p class="footer-p">+7 (823) 555-357-33</p>
                     </div>
-                    <div>
-                        <div class="icon-text">
+                    <div class="center-block">
+                        <div class="icon-text icon-text__medium">
                              <img alt="" src="img/email-icon.png" id="email-icon"/>
                             <p class="footer-p">НАША ПОЧТА:</p>
                         </div>
                         <p class="footer-p">DentoPlus@gmail.com</p> 
                     </div>
                 </div>
-                <div class="more-detailed nav-item">
+                <div class="more-detailed nav-item license-centre">
                     <a href="" class="license footer-p">Лицензия  |   Политика конфиденциальности</a>
                 </div>
             </div>
         </footer>
+
+    </body>

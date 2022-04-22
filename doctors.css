@@ -8,6 +8,7 @@
 main{
     background-color: #E5E5E5;
 }
+
 .content{
     max-width: 1180px;
     margin: auto;
@@ -16,12 +17,13 @@ main{
 .header-blok{
     background-color: #0284C7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: max-content;
 }
 .nav-flex{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 60px;
 }
 .nav-flex_items{
     display: flex;
@@ -38,7 +40,8 @@ main{
     font-size: 22px;
     text-align: center;
     color: var(--text-color);
-    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
 }
 .nav-item:hover{
     color: #d4d4d4;
@@ -46,12 +49,51 @@ main{
 .nav-item:active{
     color: #e5e5e5;
 }
-
-.about-doctors{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#background-foto-one{ 
+    background-image: url(img/hero.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: max-content;
+}
+.slogan{
+    width: calc(100%/2);
+}
+.slogan-h{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 105%;
+    color: #262626;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+#slogan_name-clinic{
+    color: #0284c7;
+}
+.slogan-p{
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 112%; 
+    color: #0C4A6E; 
+}
+.blue-button{
+    width: 242px;
+    height: 52px;
+    background-color: #0EA5E9;
+    border: 1px solid #0EA5E9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-color);
+}
+.blue-button:hover{
+    cursor: pointer;
+    background-color: #0369a1;
+    border: 1px solid #0EA5E9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .title{
     padding-top: 70px;
@@ -62,6 +104,12 @@ main{
     line-height: 54px;
     color: #0369A1;
 }
+
+.about-doctors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .about-doctors-p{
     text-align: center;
     width: 83%;
@@ -70,27 +118,47 @@ main{
     line-height: 33px;
     color: #737373;
 }
-.search{
-    width: 83%;
+.form-search{
+    width: 750px;
     height: 63px;
     background: #E0F2FE;
     border: 1px solid #BAE6FD;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
     margin-top: 83px;
     margin-bottom: 109px;
 }
+.search{
+    margin: 15px; 
+    border: none;
+    background-color: #E0F2FE;
+    outline: none;
+}
+.button-search{
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #E0F2FE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-search:hover{
+    cursor: pointer;
+}
 .search-icon{
-    padding-left: 34px;
-    padding-right: 12px;
+    border: none;
+    background-color: #E0F2FE;
+    padding-left: 30px;
+    padding-right: 15px;
     width: 18px;
     height: 20px;
 }
 .search-p{
     font-weight: 400;
-    font-size: 19px;
+    font-size: 22px;
     line-height: 38px;
     color: #A3A3A3;
 }
@@ -112,6 +180,7 @@ main{
 }
 .doctor-foto{
     border-radius: 20px;
+    width: calc(100% / 1);
 }
 .doctor-name{
     font-size: 16px;
@@ -193,8 +262,144 @@ main{
     font-weight: 400;
     font-size: 17px;
     color: #075985;
+    text-decoration: none;
 }
 .more-detailed{
     display: flex;
     justify-content: end;
+}
+
+
+@media (max-width: 1024px){
+    .content{
+        max-width: 1000px;
+    }
+    .nav-flex{
+        justify-content: space-around;
+    }
+    .slogan{
+        margin-left: 20px;
+    }
+    .title{
+        width: 70%;
+    }
+    .row-doctors{
+        margin: 0px 15px;
+    }
+    .footer-item{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .center-block{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .nav-flex{
+        justify-content: space-around;
+    }
+    .slogan{
+        margin-left: 20px;
+    }
+    .name-clinic{
+        font-size: 24px; }
+    .nav-item{
+        font-size: 20px; }
+    .slogan-h{
+        font-size: 50px; }
+    .slogan-p{
+        font-size: 16px; }
+    .blue-button{
+        font-size: 16px; }
+    .title{
+        font-size: 36px; }
+    .form-search{
+        max-width: 590px;
+    }
+    .search-p{
+        font-size: 21px;
+    }
+   
+    .about-doctors-p{
+        font-size: 22px; }
+   
+    .item-doctors{
+        width: calc(100% / 2 - var(--offset));
+    }
+        
+    .footer-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-text__medium{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-p__center{
+        text-align: center;
+    }
+   .license-centre{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav-flex{
+        justify-content: space-around;
+    }
+    .nav-flex_items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .slogan{
+        margin-left: 10px;
+    }
+    .name-clinic{
+        font-size: 20px; }
+    .nav-item{
+        font-size: 16px; }
+    .slogan-h{
+        font-size: 30px; }
+    .slogan-p{
+        font-size: 14px; }
+    .blue-button{
+        font-size: 14px; }
+    .title{
+        padding-top: 50px;
+        padding-bottom: 35px;
+        font-size: 30px;
+    }
+
+    .form-search{
+        max-width: 310px;
+    }
+    .search-p{
+        font-size: 20px;
+    }
+    .about-doctors-p{
+        font-size: 20px; }
+    .search-icon{
+        padding-left: 20px;
+        padding-right: 10px;
+        }
+    .search-p{
+        font-size: 18px;
+    }
+    .item-doctors{
+        width: calc(100% / 1 - var(--offset));
+        margin: 10px auto;
+    } 
+
+    .footer-p{
+        font-size: 16px; }
+    .license{
+        font-size: 15px;
+    }
 }
