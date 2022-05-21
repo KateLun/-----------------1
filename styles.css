@@ -117,6 +117,7 @@
     display: flex;
 }
 .arrow{
+    width: 100%;
     margin: auto;
 }
 .row-services{
@@ -329,6 +330,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 .footer-p{
     font-size: 18px;
@@ -425,13 +427,24 @@
         font-size: 36px; }
 
     .row-services{
-        flex-grow: 6;
+        height: max-content;
+        overflow: scroll;
+        }
+    .services-item-arrow{
+        display: none;
+        }
+    .row-services{
+        flex-wrap: nowrap;
+        /*flex-grow: 6;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
+    }
+    .service-background{
+        width: 220px;
     }
     .services-item{
-        width: calc(100% / 2 - var(--offset));
+        width: 220px; /*calc(100% / 2 - var(--offset));*/
         margin: calc(var(--offset) / 2);
         height: 183px;
     }
@@ -445,7 +458,7 @@
     .more-detailed{
         margin-right: 15px;
         margin-top: -20px;
-        margin-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     .row-reviews{
@@ -512,7 +525,8 @@
         font-size: 32px;
     }
 
-    .services-item{
+    
+    /*services-item{
         height: 140px;
     }
     .services-p__number{
@@ -528,7 +542,7 @@
     }
     .services-block{
         justify-content: space-evenly;
-    }
+    }*/
 
     .about-clinic-p{
         font-size: 20px;
