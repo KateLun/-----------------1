@@ -25,6 +25,39 @@
     display: flex;
     align-items: center;
 }
+.mobile-header{
+    display: none;
+}
+.nav-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.icon-menu{
+    width: 40px;
+    height: 40px;
+}
+.menu-close{
+    display: none;
+}
+.button-menu{
+    background: none;
+    border: none;
+}
+.button-menu:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.container{
+    background-color:  #0284C7;
+    height: max-content;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 .name-clinic{
     font-weight: 700;
     font-size: 26px;
@@ -504,6 +537,12 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+    }
+    .computer-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
     }
     .slogan{
         margin-left: 10px;

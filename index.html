@@ -14,7 +14,7 @@
 
     <body>
 
-        <header class="header-blok">
+        <header class="header-blok computer-header"> <!--компьют версия-->
             <nav class="content nav-flex">
                 <div class="nav-flex_items">
                     <p class="name-clinic">Dentо Plus</p>
@@ -29,6 +29,25 @@
             </nav>
         </header>
 
+        <header class="header-blok mobile-header"> <!--мобильная версия-->
+            <nav class="content">
+                <div class="nav-mobile">
+                    <p class="name-clinic">Dentо Plus</p>
+                    <button onclick="openMenu()" class="button-menu">
+                        <img src="/img/icon_menuOpen.png"  class="icon-menu menu-open" id="buttonOpen" />
+                        <img src="/img/icon_menuClose.png"  class="icon-menu menu-close" id="buttonClose" />
+                    </button>
+                </div>
+                <div class="container" id="myContainer">
+                        <a href="/service-caries.html" class="nav-item">Услуги</a>
+                        <a href="#about-clinic" class="nav-item">О нас</a>
+                        <a href="/doctors.html" class="nav-item">Врачи</a>
+                        <a href="#reviews" class="nav-item">Отзывы</a>
+                        <a href="#branches" class="nav-item">Отделения</a>
+                </div> 
+            </nav>
+        </header>
+       
         <main> 
     
             <section id="background-foto-one">
@@ -250,5 +269,5 @@
                 </div>
             </div>
         </footer>
-
+        <script src="/script.js" />
     </body>
